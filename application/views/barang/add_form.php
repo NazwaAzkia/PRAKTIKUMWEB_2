@@ -28,7 +28,7 @@
                         <label>Kategori <code>*</code></label>
                         <select name="kategori" class="form-control" required>
                             <option value="">- Pilih -</option>
-                            <?php foreach ($katagori as $k): ?>
+                            <?php foreach ($kategori as $k): ?>
                                 <option value="<?php echo $k['id'] ?>"><?php echo $k['name'] ?></option>
                             <?php endforeach; ?>
                         </select>
@@ -44,9 +44,9 @@
                     </div>
                     <div class="mb-3">
                         <label>Supplier <code>*</code></label>
-                        <select name="Supplier" class="form-control" required>
+                        <select name="supplier" class="form-control" required>
                             <option value="">- Pilih -</option>
-                            <?php foreach ($Supplier as $k): ?>
+                            <?php foreach ($supplier as $k): ?>
                                 <option value="<?php echo $k['id'] ?>"><?php echo $k['name'] ?></option>
                             <?php endforeach; ?>
                         </select>
@@ -54,7 +54,7 @@
             </div>
             <div class="mb-3">
                 <label>Stok <code>*</code></label>
-                <input class="form-control" name="stok_barang" type="text" placeholder="Stok">
+                <input class="form-control" name="stok" type="text" placeholder="Stok">
             </div>
             <button class="btn btn-primary" type="submit"><i class="fas fa-plus"></i> Save</button>
             </form>
