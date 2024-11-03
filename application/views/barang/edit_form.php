@@ -27,7 +27,7 @@
                     </div>
                     <div class="mb-3">
                         <label>Stok <code>*</code></label>
-                        <input class="form-control" name="stok" value="<?= $barang->stok; ?>" type="text" placeholder="Stok" disabled>
+                        <input class="form-control" name="stok" value="<?= $barang->stok; ?>" type="text" placeholder="Stok">
                     </div>
                     <div class="mb-3">
                         <label>Kategori <code>*</code></label>
