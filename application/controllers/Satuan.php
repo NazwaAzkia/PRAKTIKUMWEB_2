@@ -62,4 +62,13 @@ class Satuan extends CI_Controller
         $this->Satuan_model->delete($id);
         redirect('Satuan');
     }
+
+    public function laporan()
+    {
+        $data = array(
+            'title' => 'Tambah Laporan Data Satuan',
+            'content' => 'satuan/laporan'
+        );
+        $this->load->view('template/main', $data);
+    }
 }

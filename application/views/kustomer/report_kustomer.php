@@ -1,7 +1,7 @@
 <?php
-include 'report_header.php';
 $pdf = new FPDF('p', 'mm', 'A4');
 $pdf->Addpage();
+include 'report_header.php';
 $pdf->SetFont('Times', 'B', 18);
 $pdf->SetFont('Times', 'B', 14);
 $pdf->Cell(0, 5, 'LAPORAN DATA KUSTOMER', 0, 1, 'C');
